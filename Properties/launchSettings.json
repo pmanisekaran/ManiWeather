@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ManiWeather": {
+      "commandName": "Project",
+      "commandLineArgs": "4 40.712 74.006"
+    }
+  }
+}
