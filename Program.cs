@@ -34,12 +34,17 @@ class Program
 
 			Console.WriteLine($"Data saved to {fileName}");
 			Console.WriteLine("Press any to exit.");
-			Console.ReadKey();
+
 		}
 		catch (HttpRequestException e)
 		{
 			Console.WriteLine($"Error: {e.Message}");
 			Console.WriteLine("Press any key to exit");
+		}
+		finally
+		{
+			client.Dispose();
+			Console.ReadKey();
 		}
 	}
 }
